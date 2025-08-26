@@ -1,0 +1,123 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.app-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* min-height: 100vh; */
+  /* background: linear-gradient(135deg, #6a11cb, #2575fc); */
+  font-family: Arial, sans-serif;
+}
+
+.form-card {
+  background: white;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  width: 400px;
+  margin: 10px;
+}
+
+
+.form-card h2 {
+  margin-bottom: 20px;
+  text-align: center;
+  color: #333;
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+.form-group label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+input,
+select,
+textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  outline: none;
+  font-size: 14px;
+}
+
+textarea {
+  resize: none;
+  height: 80px;
+}
+
+.btn {
+  width: 100%;
+  padding: 12px;
+  background: linear-gradient(90deg, #6a11cb, #2575fc);
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.btn:hover {
+  opacity: 0.9;
+}
+
+.error {
+  color: red;
+  font-size: 12px;
+  margin-top: 3px;
+}
+
+.stars {
+  display: flex;
+  gap: 5px;
+  cursor: pointer;
+}
+
+.star {
+  font-size: 20px;
+  color: #ccc;
+  transition: 0.2s;
+}
+
+.star.selected {
+  color: gold;
+}
+
+.success {
+  text-align: center;
+  color: green;
+}
+
+
+.form-group > label {
+  font-weight: bold;   
+  display: block;
+  margin-bottom: 5px;
+}
+
+.form-group .radio-options label {
+  font-weight: normal; 
+}
+
+
+.form-group .radio-options {
+  display: flex;
+  gap: 20px;                /* space between Yes/No */
+  align-items: center;
+}
+
+.form-group .radio-options label {
+  display: flex;            /* keep text and radio inline */
+  align-items: center;
+  gap: 5px;                 /* small gap between circle and text */
+}
